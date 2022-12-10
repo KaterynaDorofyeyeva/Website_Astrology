@@ -1,0 +1,231 @@
+
+h1{
+  font-family: Rubik, sans-serif; /*"Spectral", serif;*/
+  color: blue;
+  text-align: center;
+  font-size: 60px;
+}
+h2{
+  font-family: Rubik, sans-serif; /*"Spectral", serif;*/
+  color: blue;
+  text-align: left;
+  font-size: 36px;
+}
+h3{
+  font-family: Rubik, sans-serif; /*"Spectral", serif;*/
+  color: blue;
+  text-align: left;
+  font-size: 26px;
+}
+
+
+
+p::first-letter {
+  color: blue;
+  font-size: xx-large;
+}
+::selection {
+  color: white;
+  background: goldenrod ;
+}
+/*###### Navigation Bar #####*/
+
+header{
+  padding: 6px;
+  text-align: center;
+  background-color: orange;
+  }
+.home{
+  display: flex; /* apply flexbox */
+  flex-direction: column;
+  align-items: center; /*items vertically centered*/
+  justify-content: space-between; /*left space between co...*/
+}
+/* Style the links inside the topnav */
+.topnav{
+  margin: 0px;
+  padding: 15px 15px;  
+}
+.topnav a{  
+  display: block;
+  text-align: center;
+  color: saddlebrown; /*text color white*/
+  padding: 12px;
+  text-decoration: none; /*no underline of links*/
+  font-size: 26px;
+  font-family: Rubik, sans-serif;
+}
+/* Change the color of links on hover*/
+.topnav a:hover{ 
+  background-color: wheat;
+  color: rgb(13, 124, 13);
+  border-radius: 25px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(29, 233, 29);  
+}
+
+.leftcolumn {
+  float: right ;
+  width: 25%;
+  background-color: moccasin ;
+  padding: 20px;
+  padding-top: 20;
+  text-align: left;
+} 
+.rightcolumn {   
+  float: left;
+  width: 75%;
+  padding: 20px;
+}
+
+
+.card {
+  background-color: rgba(255, 197, 88, 0.801) ;
+  padding: 20px;
+  margin-top: 20px;
+}
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+
+
+.footer a{
+  color: saddlebrown;
+  margin: 22px;
+  padding: 10px;
+  font-size: 26px;
+  font-family: Rubik, sans-serif;
+}
+.footer a:hover{ 
+  background-color: wheat;
+  color: rgb(13, 124, 13);
+  border-radius: 25px;
+  text-decoration-line: underline;
+  text-decoration-color: rgb(29, 233, 29);  
+}
+
+.nav {
+  background-color: orange; 
+  display: flex; /* apply flexbox */
+  flex-direction: row;
+  align-items: center; /*items vertically centered*/
+  justify-content: space-between;
+}
+.nav li {  
+  color: saddlebrown; /*text color white*/
+  padding: 15px;
+  text-decoration: none; /*no underline of links*/
+  font-size: 26px;
+  font-family: Rubik, sans-serif;
+}
+
+ul {
+  list-style-type: none;
+  margin: 10;
+  padding: 20;
+  overflow: hidden;
+  background-color: none;
+}
+
+.dropbtn {
+  padding: 6px; 
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;  
+}
+
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: darkorange;
+  min-width: 160px;
+  border-radius: 25px;
+}
+
+.dropdown-content a {
+  color: darkgreen;
+  padding: 8px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.topnav.dropdown {
+  display: inline-block;
+}
+
+
+
+input[type=text2], select {
+  width: 180px;
+  display: block;
+  padding: 3px;
+  margin: 6px;
+  border: 2px solid lightgreen;
+  border-radius: 8px;
+  box-sizing: border-box;
+  background-color: none;
+  font-size: 20px;
+  color: black;
+  padding: 6px 6px 6px 6px;
+  }
+
+input[type=text2]:hover{
+  background-color: lightgreen;
+  border-color: orange;
+}
+
+input[type=submit] {
+  width: 8px 50px;
+  background-color: orange ;
+  color: blue ;
+  padding: 0px 0px;
+  margin: 0px 0;
+  border: color;
+  border-color: orange;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 24px;
+  font-family: Rubik, sans-serif;
+}
+
+input[type=submit]:hover {
+  background-color: lightgreen;
+  color: darkgreen;
+}
+
+div {
+  border-radius: 5px;
+}
+  
+
+
+@media(max-width:950px) {
+  .leftcolumn, .rightcolumn{
+    width: 100%;
+    padding: 0;
+    text-align: center;
+  }
+}
+  .home{
+    flex-direction: column;
+    /* overflow: hidden; */
+  }
+  .boxes{
+    flex-direction: column;
+  }
+
+
+
